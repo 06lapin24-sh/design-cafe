@@ -64,6 +64,8 @@ h2 {
 .slider div {
   display: block;
   color: #c6c6c6;
+  width: 10px;
+  height: 10px;
 }
 
 .slider div:first-child {
@@ -101,7 +103,7 @@ h2 {
 
 .content {
   display: flex;
-  gap: 4%;
+  gap: 40px;
 }
 
 .about-us {
@@ -173,13 +175,13 @@ h2 {
 .event__content {
   background-color: #fff;
   border: solid 1px #4f270b;
-  padding: 32px 15%;
+  padding: 32px 16%;
   margin: 0 auto;
 }
 
 .event__item {
   display: flex;
-  gap: 6.3%;
+  gap: 40px;
   margin-bottom: 16px;
 }
 
@@ -187,13 +189,13 @@ h2 {
   margin-bottom: 0;
 }
 
-dt {
-  font-size: 20px;
-  font-weight: 500;
-}
-
+dt,
 dd {
   font-size: 20px;
+}
+
+dt {
+  font-weight: 500;
 }
 
 /* ここまでevent */
@@ -216,7 +218,7 @@ footer {
 
 .contact__content {
   display: flex;
-  gap: 3.9%;
+  gap: 39px;
   margin-bottom: 80px;
 }
 
@@ -230,28 +232,28 @@ footer {
   width: 43.4%;
 }
 
-.contact__item {
-  display: flex;
-  gap: 9.4%;
-  margin-bottom: 16px;
-}
-
-.contact__item:last-child {
-  margin-bottom: 0;
+th,
+td {
+  line-height: 1.5;
+  padding: 0 0 16px 0;
+  text-align: left;
+  vertical-align: top;
 }
 
 th {
   width: 20%;
   font-size: 16px;
   font-weight: 400;
-  text-align: left;
-  line-height: 1.5;
 }
 
 td {
   width: 67.9%;
   font-size: 16px;
-  line-height: 1.5;
+}
+
+.contact__item:last-child th,
+.contact__item:last-child td {
+  padding: 0;
 }
 
 .copy {
