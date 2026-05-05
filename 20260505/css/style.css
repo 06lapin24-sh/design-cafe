@@ -101,12 +101,12 @@ h2 {
 
 /* ここまでlead */
 
-.content {
+.about-us__content {
   display: flex;
   gap: 40px;
 }
 
-.about-us {
+.about-us__content img {
   width: 45%;
   height: auto;
   aspect-ratio: 1 / 1.09;
@@ -234,6 +234,7 @@ footer {
 
 th,
 td {
+  font-size: 16px;
   line-height: 1.5;
   padding: 0 0 16px 0;
   text-align: left;
@@ -242,13 +243,11 @@ td {
 
 th {
   width: 20%;
-  font-size: 16px;
   font-weight: 400;
 }
 
 td {
   width: 67.9%;
-  font-size: 16px;
 }
 
 .contact__item:last-child th,
