@@ -137,6 +137,10 @@ h2 {
   line-height: 1.8;
 }
 
+.br-sp {
+  display: none;
+}
+
 /* ここまでabout-us */
 
 .menu-list {
@@ -272,4 +276,270 @@ dd {
   bottom: 20px;
   right: 20px;
   width: 140px;
+}
+
+.hamburger,
+.header__nav-sp {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .hamburger {
+    display: block;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99999;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 8px;
+    top: 26px;
+    transition: 0.3s;
+  }
+
+  .hamburger::before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 8px;
+    top: 13px;
+    transition: 0.3s;
+  }
+
+  .hamburger::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 8px;
+    bottom: 13px;
+    transition: 0.3s;
+  }
+
+  /* openが付いた時の挙動 */
+  .open span {
+    background-color: transparent;
+  }
+
+  .open::before {
+    transform: rotate(45deg);
+    top: 28px;
+  }
+
+  .open::after {
+    transform: rotate(-45deg);
+    bottom: 24px;
+  }
+
+  .header__nav-sp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #000000a1;
+  }
+
+  .header__nav-sp a {
+    color: #fff;
+    font-size: 36px;
+    font-family: "Alatsi", sans-serif;
+  }
+
+  .header__nav-sp ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section:not(.access) {
+    margin: 0 auto 80px;
+  }
+
+  .section-inner {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    color: #d20202;
+    font-size: 32px;
+    margin-bottom: 32px;
+    font-weight: normal;
+  }
+
+  /* ここまで共通 */
+
+  .logo {
+    width: 244px;
+    margin-top: -8px;
+  }
+
+  .slider {
+    margin: 40px auto 76px;
+  }
+
+  .lead {
+    padding: 0 20px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+
+  .headline {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  /* ここまでlead */
+
+  .about-us__content {
+    display: block;
+  }
+
+  .about-us__content img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.54 / 1;
+    border-radius: 0;
+    margin-bottom: 40px;
+  }
+
+  .about-us__h2 {
+    text-align: center;
+  }
+
+  .about-us__topic {
+    font-size: 24px;
+  }
+
+  .about-us__text {
+    line-height: 2;
+  }
+
+  .br-sp {
+    display: block;
+  }
+
+  /* ここまでabout-us */
+
+  .menu-list {
+    display: block;
+  }
+
+  .menu-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  /* ここまでmenu */
+
+  /* 次回の授業で実装 */
+
+  /* ここまでgallery */
+
+  .event__list {
+    padding: 32px 20px;
+  }
+
+  .event__item {
+    display: block;
+    margin: 0 auto 32px;
+  }
+
+  time {
+    font-size: 16px;
+  }
+
+  .event__item p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  /* ここまでevent */
+
+  iframe {
+    width: 100%;
+    height: 240px;
+  }
+
+  footer {
+    background-color: #fff;
+  }
+
+  .footer-inner {
+    margin: 0 auto;
+    padding: 80px 20px;
+  }
+
+  .contact__content {
+    display: block;
+    margin-bottom: 108px;
+  }
+
+  .contact__content img {
+    width: 326px;
+    height: 29px;
+    margin-bottom: 39px;
+  }
+
+  dl {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  dl:last-child {
+    margin-bottom: 0;
+  }
+
+  dt {
+    margin-bottom: 8px;
+  }
+
+  dt,
+  dd {
+    line-height: 1;
+  }
+
+  dl:nth-of-type(2) dd {
+    line-height: 1.5;
+  }
+
+  .copy {
+    line-height: 1;
+  }
+
+  .top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 140px;
+  }
 }
